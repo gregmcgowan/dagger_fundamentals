@@ -1,0 +1,14 @@
+[versions]
+kotlin = "2.1.21"
+daggerVersion = "2.56.2"
+ksp = "2.1.21-2.0.1"
+ktlint = "11.6.0"
+
+[libraries]
+dagger = { group = "com.google.dagger", name = "dagger", version.ref = "daggerVersion" }
+dagger-compiler = { group = "com.google.dagger", name = "dagger-compiler", version.ref = "daggerVersion" }
+
+[plugins]
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+ktLint = {id = "org.jlleitschuh.gradle.ktlint", version.ref ="ktlint" }
