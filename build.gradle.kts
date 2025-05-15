@@ -16,5 +16,6 @@ kotlin {
 
 dependencies {
     implementation(libs.dagger)
+    implementation(libs.okHttp)
     ksp(libs.dagger.compiler)
 }
