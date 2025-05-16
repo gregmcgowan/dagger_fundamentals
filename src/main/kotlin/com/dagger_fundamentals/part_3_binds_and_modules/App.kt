@@ -35,7 +35,7 @@ interface HomeScreenContract {
 }
 
 class HomeScreenPresenter @Inject constructor(
-    private val mainScreen: HomeScreenContract.Screen
+    private val mainScreen: HomeScreenContract.Screen,
 ) : HomeScreenContract.Presenter {
     override fun present() {
         mainScreen.show()

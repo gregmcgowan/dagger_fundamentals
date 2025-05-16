@@ -16,7 +16,7 @@ interface HomeScreenContract {
 
 class HomeScreenPresenter @Inject constructor(
     private val userRepo: UserRepo,
-    private val screen: HomeScreenContract.Screen
+    private val screen: HomeScreenContract.Screen,
 ) : HomeScreenContract.Presenter {
     override fun present() {
         userRepo.getUser("1")

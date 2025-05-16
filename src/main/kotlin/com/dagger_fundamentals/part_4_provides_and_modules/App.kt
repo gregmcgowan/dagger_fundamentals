@@ -21,8 +21,8 @@ class App {
     modules = [
         HomeScreenModule::class,
         UserRepoModule::class,
-        NetworkModule::class
-    ]
+        NetworkModule::class,
+    ],
 )
 interface AppComponent {
     fun inject(app: App)

@@ -1,3 +1,5 @@
 # .editorconfig
 [*.kt]
-ktlint_disabled_rules=package-name
+ktlint_standard_package-name = disabled
+# does not work well with @Inject on the constructor
+ktlint_standard_annotation = disabled

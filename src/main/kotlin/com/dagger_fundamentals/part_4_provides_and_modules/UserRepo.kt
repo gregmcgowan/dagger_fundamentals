@@ -25,7 +25,7 @@ interface UserRepo {
 data class User(val name: String)
 
 class RemoteUserRepo @Inject constructor(
-    private val okHttpClient: OkHttpClient
+    private val okHttpClient: OkHttpClient,
 ) : UserRepo {
     override fun getUser(userId: String): User {
         // Pretend we have some okhttp code here

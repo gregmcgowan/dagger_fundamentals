@@ -26,7 +26,7 @@ interface AppComponent {
 }
 
 class HomeScreenPresenter @Inject constructor(
-    private val homeScreen: HomeScreen
+    private val homeScreen: HomeScreen,
 ) {
     fun present() {
         homeScreen.show()
