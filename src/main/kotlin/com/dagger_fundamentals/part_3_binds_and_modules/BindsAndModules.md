@@ -1,4 +1,4 @@
-# `@Binds` and `@Modules`
+# `@Binds` and `@Module`
 We read that interfaces were cool in a medium article on the internet so we want to use them in our app. 
 
 So we created an interface for the `HomeScreen` and `HomeScreenPresenter`
