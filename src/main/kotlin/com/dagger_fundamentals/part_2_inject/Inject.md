@@ -10,6 +10,8 @@ The nodes are objects in our application and the edges and their direction indic
 In the simple example we have, we can (and will) model the application as the following DAG. 
 App has a dependency on HomeScreenPresenter which has a dependency on HomeScreen. 
 
+![](../../../../../../diagrams/inject.png)
+
 DAG is where the library gets it's name, a creator of DAGs or a DAGger 
 We'll start with the HomeScreen as it has no dependencies. 
 
@@ -50,7 +52,7 @@ interface AppComponent {
 
 We can think of a component as the graph of the dependencies in our application. 
 
-Although we haven't explicitly linked our HomeScreen, HomeScreenPresenter and App Dagger is able to construct the graph by looking at the starting point (App) and then subsequently follow any dependancies from there (HomeScreenPresenter and then HomeScreen) 
+Although we haven't explicitly linked our `HomeScreen`, `HomeScreenPresenter` and `App` Dagger is able to construct the graph by looking at the starting point (App) and then subsequently follow any dependancies from there (HomeScreenPresenter and then HomeScreen) 
 
 Dagger will then generate code which we can use to inject those objects. All generated code will be prefixed with Dagger. We then call this generated code  and it will initialise our graph for us. 
 
